@@ -180,9 +180,9 @@ for epoch in range(EPOCH):
 
     if epoch >= 0:
         plt.plot(epoch_list, train_cnn_accuracy_list, color='b', label='Train cnn model accuracy')
-        plt.plot(epoch_list, train_fnn_accuracy_list, color='g', label='Train cnn model accuracy')
-        plt.plot(epoch_list, test_cnn_accuracy_list, color='y', label='Train cnn model accuracy')
-        plt.plot(epoch_list, test_fnn_accuracy_list, color='r', label='Train cnn model accuracy')
+        plt.plot(epoch_list, train_fnn_accuracy_list, color='g', label='Train fnn model accuracy')
+        plt.plot(epoch_list, test_cnn_accuracy_list, color='y', label='Test cnn model accuracy')
+        plt.plot(epoch_list, test_fnn_accuracy_list, color='r', label='Test fnn model accuracy')
         plt.title('Test images accuracy vs iteration')
         plt.xlabel('Iteration')
         plt.ylabel('Accuracy')
